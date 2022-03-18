@@ -11,12 +11,12 @@ workflows:
           requires:
             - build
       - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
-  requires:
-    - build
-    - test
-    filters:
-      branches:
-        only: master
+          requires:
+            - build
+            - test
+          filters:
+            branches:
+              only: master
 jobs:
   build:
     docker:
