@@ -10,6 +10,7 @@ public class HelloController {
         return "Hello Twaran, welcome to CICD Spring Boot demo !!";
     }
 
+
     @GetMapping("/")
     public String sayHello() {
         return "Hello Twaran, welcome to demo !!";
